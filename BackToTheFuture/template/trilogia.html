@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Trilogía {% endblock %}
+{% block link %} <link rel="icon" href="{% static 'images/icon/back to the future_capacitor_technology_icon.png' %}"> {% endblock %}
+{% block h1 %} <h1 class="nombre_seccion">Trilogía</h1> {% endblock %}
+{% block main %}
+
+ <div class="flyer_trilogia">
+      <!--------------------- Flyer 1 --------------------->
+      <div class="flyer">
+        <div class="flyer_img">
+          <img src="{% static 'images/Trilogia/1/Back To the Future (1985) 3.jpg' %}" alt="Volver al Futuro 1">
+          <div class="content">
+            <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square icon_social"></i></a>
+          </div>
+        </div>
+        <div class="flyer_title">
+          <h2>Back To The Future I - 1985</h2>
+        </div>
+      </div>
+      
+      <!--------------------- Flyer 2 --------------------->
+      <div class="flyer">
+        <div class="flyer_img">
+          <img src="{% static 'images/Trilogia/2/BTF2.jpg' %}" alt="Volver al Futuro 2">
+          <div class="content">
+            <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square icon_social"></i></a>
+          </div>
+        </div>
+        <div class="flyer_title">
+          <h2>Back To The Future I - 1985</h2>
+        </div>
+        
+      </div>
+      
+      <!--------------------- Flyer 3 --------------------->
+      <div class="flyer">
+        <div class="flyer_img">
+          <img src="{% static 'images/Trilogia/3/BTF 3.jpg' %}" alt="Volver al Futuro 3">
+          <div class="content">
+            <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square icon_social"></i></a>
+          </div>
+        </div>
+        <div class="flyer_title">
+          <h2>Back To The Future III - 1990</h2>
+        </div>
+      </div>
+      
+    </div>
+
+{% endblock %}
