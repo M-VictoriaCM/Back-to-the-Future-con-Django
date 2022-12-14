@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Back To Future Fan´s Page {% endblock %}
+{% block link %} <link rel="icon" href="{% static 'images/icon/back to the future_car_delorean_future_transport_icon.png' %}"> {% endblock %}
+{% block h1 %} <h1 class="nombre_seccion">Volver al Futuro Fandom Page</h1> {% endblock %}
+{% block main %}
+  <!--************************* Presentación *************************-->
+    <!-- <div class="main"></div> -->
+    <div class="contenido-principal">
+    
+      <img src="{% static 'images/BackgR/tablero-delorean.jpg' %}" alt="Tablero Delorean">
+    </div>
+
+
+    <div class="holis">
+      <h2 class="card-body"> El Futuro llegó hace rato... </h2>
+      <div class="flex-paragraph">
+        <span>
+          <p> Somos un grupo de fans de "Volver al Futuro", film que se estrenó en el año 1985, dirigida por Robert
+            Zemeckis.</p>
+        </span>
+        <span>
+          <p>Mezclando ciencia ficción y comedia, se convirtió en un fenómeno cultural mundial
+            que rompió con todas las barreras témporoespaciales</p>
+        </span>
+        <span>
+          <p>y predijo muchos inventos que hoy podemos ver en el mundo.</p>
+        </span>
+        <span>
+          <p>La película es proseguida por Back to the Future Part II (1989) y Back to the Future Part III (1990)
+            formando
+            toda una trilogía.</p>
+        </span>
+      </div>
+
+      <h3 class="invite"> Podes visitar el sitio y saber más sobre toda esta aventura atemporal!!</h3>
+
+      <h4 class="future"> "Su futuro aún no ha sido escrito, ni el de ninguno...tu futuro es el que tú te formes."
+        (E.Brown) </h4>
+    </div>
+
+
+    <!--************************* Audio *************************-->
+
+    <div class="music">
+      <div class="audio">
+        <!-- <audio controls autoplay>
+          <source src="mp3/Orquesta Outatime - Back To The Future.mp3" type="audio/mp3">Tu navegador no soporta HTML5 audio.
+        </audio> -->
+      </div>
+
+    </div>
+{% endblock %}
