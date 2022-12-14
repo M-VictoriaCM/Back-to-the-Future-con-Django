@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{% block title %} {% endblock %}</title>
+  <!-------------------------- icono ----------------------------->
+  {% block link %} {% endblock %}
+  <!-------------------------- iconos de font-awesome ----------------------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-------------------------- Estilo ----------------------------->
+  <link href='{% static "css/style.css" %}' rel="stylesheet">
+  <link href='{% static "css/home.css" %}' rel="stylesheet">
+  <link href='{% static "css/trilogia.css" %}' rel="stylesheet">
+  <link href='{% static "css/personajes.css" %}' rel="stylesheet">
+  <link href='{% static "css/miscelaneas.css" %}' rel="stylesheet">
+  <link href='{% static "css/contacto.css" %}' rel="stylesheet">
+  
+</head>
+
+<body>
+  <header class="header">
+    <div id="header-logo">
+      <div id="flex-item">
+        <img class="izquierda" src="{% static 'images/icon/cientist_doc_doctor brown_emmett brown_icon.png' %}" alt="Doctor Emmet Brown">
+        <img class="derecha" src="{% static 'images/icon/marty_marty mcfly_mcfly_icon.png' %}" alt="Marty McFly">
+        <span class="seccion">
+        <h1>{% block h1 %} {% endblock %}</h1>
+          
+        </span>
+        
+      </div>
+      <hr>
+    </div>
+    
+    </div>
+    <nav class="main-nav">
+      <div id="toggle-menu" class="toggle-menu">
+        <i class="fa-solid fa-bars icon__menu"></i>
+      </div>
+      <ul id="main-menu" class="main-menu">
+        <li class="main-menu__item">
+          <a href="{% url 'pagina_inicio' %}" class="main-menu__link">Inicio</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="{% url 'trilogia' %}" class="main-menu__link">Trilogía</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="{% url 'personajes' %}" class="main-menu__link">Personajes</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="{% url 'miscelaneas' %}" class="main-menu__link">Misceláneas</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="{% url 'contacto' %}" class="main-menu__link">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+<main class="main_index">
+    {% block main %}
+
+    {% endblock %}
+
+</main>
+
+{% include 'headerFooter\footer.html' %}
