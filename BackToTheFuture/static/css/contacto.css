@@ -1,144 +1,173 @@
 @import url(style.css);
 
-.main_personajes{
-  /* border:1px solid orange; */
-  margin-top: 4rem;
+.main_contacto {
+  margin-top: 3.5rem;
 }
 
-.main_vaf1{
-  margin-top: 3rem;
-}
-
-.flex-paragraphcast {
-  font-weight: lighter;
-  font-family: sans-serif;
-  font-size: 15px;  
-  font-style: double;
-  text-align: justify;
-  color:  rgb(255, 166, 1);
-  -webkit-order: 0;
-  -ms-flex-order: 0;
-  order: 0;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-align-self: auto;
-  -ms-flex-item-align: auto;
-  align-self: auto;
-  line-height: 1.6;
-}
-
-.cast {
-  font-weight: bolder;
-  font-family: sans-serif;
-  font-size: 20px;  
-  font-style: double;
-  text-align: center;
-  color: rgb(255, 166, 1);
-  -webkit-order: 0;
-  -ms-flex-order: 0;
-  order: 0;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-align-self: auto;
-  -ms-flex-item-align: auto;
-  align-self: auto;
-}
-
-.personaje{
-  /* border: 1px solid blue; */
-  display:flex;
-  flex-direction:row;
-}
-
-.nombre_personaje{
-  /* border: 1px solid red; */
-  padding: 10px;
-}
-
-h3 {
-  text-align: center;
-  padding: 0.5rem;  
-}
-
-.pelicula {
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 20px;  
-  font-style: double;
-  text-align: center;
-  margin: 1rem;
-  padding: 1rem;
-  color: rgb(250, 69, 24);
-}
-
-.img_actor{
-  width: 200px;
-  height: 200px;
-  transition: .3s ease-in-out;
-}
-.img_actor:hover{
-    scale: 0.9;
-}
-
-  
-.text_biografia{
-  text-align: justify;
-  padding: 2rem 1rem 0 1rem;
-}
-
-.reparto_actores{
+.contenido-principal {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
-.logo{
-  width: 500px;
-  height: auto;
+.cont_form {
+  align-self: center;
 }
 
-.logo_film{
-  display:flex;
-  flex-direction:row;
-  justify-content: center;
+.body_form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
 }
 
-.sinopsis {
-  border:1px rgb(255, 166, 1);
-  padding: 20px;
-  display:flex;
-  flex-direction:column;
+.body_form>.input_label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input_label {
   text-align: left;
-  justify-content: center
+  margin-left: 0.8rem;
+  font-size: 1rem;
+  font-family: inherit;
+  align-items: center;
 }
 
-.sinopsis button {
-  width: 150px;
-  border: 3px solid #dddbdb;
+.input_camp {
+  border-radius: 5px;
+}
+
+.input_labelC {
+  font-size: 0.9rem;
+  text-align: center
+}
+
+.input_labelC>.input_camp {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+fieldset {
+  width: 440px;
+  margin: 1rem 1rem 1rem 0.5rem;
+  align-self: left;
+  border: 1px solid white;
+  padding-bottom: 1rem;
+}
+
+legend {
+  text-align: left;
+  color: white;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.option {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evelin;
+}
+
+
+label {
+  font-family: inherit;
+  color: rgb(255, 166, 1);
+}
+
+input[type=text],
+input[type=date],
+input[type=email] {
+  width: 60%;
+  text-align: justify;
+  padding: 0.5rem;
+  margin: 1vw;
+  display: block;
+
+  box-sizing: border-box;
   background-color: #dddbdb;
-  border: 2px solid ;
-  border-radius: 15px;
-  padding: 6px;
-  font-size: 15px;
+}
+
+.button-send {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  margin-bottom: 10px;
-  transition: 0.2s;
 }
 
-.video{
-  display:flex;
-  flex-direction:row;
-  justify-content: center;}
-
-.video > iframe{ 
-  width: 560px;
-  height: 315px;
+.button-send:hover {
+  background-color: #07ce11;
+  border: 1px solid darkgreen;
 }
-  
-.iframe{
-  width: 560px;
-  height: 315px;
+
+
+/*-----------------------Show_data------------*/
+.tab {
+  margin: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+.tabla-dinamica {
+  border: 1px solid rgb(255, 166, 1);
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+th,
+td {
+  border: 1px solid rgb(255, 166, 1);
+  width: 25%;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (min-width:768px) {
+  .body_form {
+    width: 600px;
+  }
+
+  fieldset {
+    width: 600px;
+  }
+
+  input[type=text],
+  input[type=date],
+  input[type=email] {
+    width: 70%;
+  }
+
+  .input_labelC>.input_camp {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .body_form {
+    width: 950px;
+  }
+
+  input[type=text],
+  input[type=date],
+  input[type=email] {
+    width: 80%;
+    padding: 1rem;
+  }
+
+  .input_label {
+    font-size: 1.1rem;
+  }
+
+  .main_contacto {
+    margin-top: 4.5rem;
+  }
+
+  fieldset {
+    width: 940px;
+  }
+
 }

@@ -7,9 +7,9 @@
   justify-content: center;
 }
 
-.article{
-  margin-left: 2rem;
-  margin-bottom: 2rem;
+.article {
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
   line-height: 1.6;
 }
 
@@ -26,7 +26,7 @@
   /* border: 5px solid white; */
   display: flex;
   justify-content: center;
-} 
+}
 
 .article-image img {
   /* border: 5px solid red; */
@@ -34,8 +34,8 @@
   height: Auto;
 }
 
-.content_clock{
-  display:flex;
+.content_clock {
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
@@ -48,113 +48,157 @@
   padding: 10px;
 }
 
-.video{
-  display:flex;
-  flex-direction:row;
+.video {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
-.video > iframe{ 
+.video>iframe {
   width: 560px;
   height: 315px;
 }
-  
-.iframe{
+
+.iframe {
   width: 560px;
   height: 315px;
 
 }
+
 .article-content {
   text-align: justify;
   padding: 1rem;
 }
 
 
+/*------------------------------ MEDIA QUERIES ------------------------------ */
+@media screen and (min-width:480px) {
+  .columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
- /*------------ MEDIA QUERIES: medium ------------*/
-@media screen and (min-width:768px){
+  .content {
+    align-self: center;
+  }
+
+  .article-content {
+    font-size: 1.5rem;
+  }
+
+  .article-title {
+    font-size: 1.5rem;
+  }
+}
+
+/*------------ MEDIA QUERIES: medium ------------*/
+@media screen and (min-width:768px) {
   .columns {
     /* border: 5px solid green; */
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 1 1rem 1 1rem;
-    width: 100%;  
+    justify-content: space-between;
+    margin: 0.5rem;
+    width: 100vw;
   }
+
   .content {
-    margin:1rem;
-    width:50%;
-    /* border: 2 px solid blue; */
+    margin: 1rem;
+    width: 50%;
+    border: 2 px solid blue;
     margin: 0 0.5rem 0 0.5rem;
   }
-  .content_clock{
-    display:flex;
+
+  .content_clock {
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: 3rem;
     padding-left: 3rem;
   }
-  .article{
+
+  .article {
     margin-bottom: 1.5rem;
-    text-align:center;
-  }
-  .article:hover{
-    border:1px solid rgb(255, 166, 1);
-  }
-  .article-image{
     text-align: center;
-    width:100%;
   }
-  .article-image > img {
-    width:300px;
+
+  .article:hover {
+    border: 1px solid rgb(255, 166, 1);
+  }
+
+  .article-image {
+    text-align: center;
+  }
+
+  .article-image>img {
+    width: 300px;
     height: Auto;
   }
+
   .article-content {
-    padding: 1.5rem;
+    font-size: 1rem;
   }
+
+  .article-title {
+    font-size: 1rem;
+  }
+
+  .main-miscelaneas {
+    margin-top: 2rem;
+  }
+
+  .video>iframe {
+    width: 350px;
+    height: auto;
+  }
+
 }
 
-@media screen and (min-width: 1024px){
-  
-  .article{
-    margin-left: 2rem ;
+@media screen and (min-width: 1024px) {
+
+  .article {
+    margin-left: 2rem;
     margin-bottom: 2.5rem;
-    text-align:center;
+    text-align: center;
   }
-   .article-image img {
-    width:500px;
+
+  .article-image img {
+    width: 500px;
     height: Auto;
   }
+
   .article-content {
     padding: 0.5rem;
   }
 
-  .content_clock{
-    display:flex;
+  .content_clock {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-left: 1rem;
     padding-left: 1rem;
-}
-.weather-info {
-  padding: 0.5;
-  margin: 0;
-  display: flex;
-  justify-content: left;
-  color: rgb(255, 166, 1);
-  background-color: rgb(9, 2, 26);
-}
+  }
 
-.weather__item {
-  padding-left: 0.8rem;
-}
+  .weather-info {
+    padding: 0.5;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    color: rgb(255, 166, 1);
+    background-color: rgb(9, 2, 26);
+  }
 
-h2 {
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 18px;
-  font-style: double;
-  text-align: center;
-  color: rgb(250, 39, 24);
-   }
+  .weather__item {
+    padding-left: 0.8rem;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: double;
+    text-align: center;
+    color: rgb(250, 39, 24);
+  }
 }
