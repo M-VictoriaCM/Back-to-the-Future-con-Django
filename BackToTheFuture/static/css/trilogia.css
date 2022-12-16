@@ -24,7 +24,6 @@
 	width: 250px;
 	text-align: center;
 	height: 400px;
-	/* transition: .3s ease-in-out; */
 	position: relative;
 	overflow: hidden;
 }
@@ -33,12 +32,10 @@
 	/* border: 1px solid white; */
 	width: 250px;
 	height: auto;
-	transition: all .5s;
+	
 }
 
-.flyer_img:hover{
-    transform:scale(1.09);
-}
+
 .content {
 	display:flex;
 	flex-direction: column;
@@ -64,9 +61,7 @@
 	background: gray;
 	border-radius: 50%;
 }
-.flyer_img:hover .content{
-	top: 0;
-}
+
 
 
 .flyer_title > h2{

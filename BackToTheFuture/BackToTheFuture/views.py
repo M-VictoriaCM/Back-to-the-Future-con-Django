@@ -16,3 +16,6 @@ def miscelaneas(request):
 
 def contacto(request):
     return render(request, 'contacto.html', {})
+
+def vaf1(request):
+    return render(request, 'vaf1.html', {})

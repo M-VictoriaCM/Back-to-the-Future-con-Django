@@ -15,7 +15,7 @@
                     <div class="clock">
                         <h2 class="article-title"> CLIMA Y HORA PARA VIAJAR</h2>
                         <br>
-                        <!--<section class="weather-info">
+                        <section class="weather-info">
 						<p>Clima en Argentina: </p>
 						<p class="weather__item">
 								<i class="fa-solid fa-temperature-empty"></i>
@@ -28,19 +28,19 @@
 					</section>
 					<div class="content_clock">
 						<canvas id="canvas"></canvas>
-					</div>-->
+					</div>
                     </div>
                     <div class="content">
                         <p>¿Que hora es en otras partes del mundo?</p>
-                        <!--<a href="Worldclock.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square icon_social"></i></a>-->
+                        <!--<a href="{% static 'Worldclock.html' %}" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square icon_social"></i></a>-->
                     </div>
                 </div>
             </article>
 
             <article class="article">
                 <br>
-                <div class="article-image"><img src="images/BackgR/09-back-to-the-future-wallpaper.jpg"
-                        alt="Tablero máquina del tiempo"></img></div>
+                <div class="article-image">
+                    <img src="{% static 'images/BackgR/09-back-to-the-future-wallpaper.jpg' %}" alt="Tablero máquina del tiempo"></div>
                 <br><br>
                 <h2 class="article-title">
                     Huey Lewis & The News - The Power of Love
@@ -57,7 +57,7 @@
 
                     <div class="music">
                         <audio controls autoplay>
-                            <source src="mp3/The Power Of Love Huey Lewis And The News.mp3" type="audio/mp3">Tu
+                            <source src="{% static 'imp3/The Power Of Love Huey Lewis And The News.mp3' %}" type="audio/mp3">Tu
                             navegador no soporta HTML5 audio.</audio>
                         <br><br>
                     </div>
@@ -73,7 +73,7 @@
             <article class="article">
                 <br>
                 <div class="article-image">
-                    <img src="images/BackgR/pngegg.png" alt="Doc Emmet Brown y Marty McFly">
+                    <img src="{% static 'images/BackgR/pngegg.png' %}" alt="Doc Emmet Brown y Marty McFly">
                 </div>
                 <br><br>
                 <h2 class="article-title"> Reencuentro</h2>
@@ -156,7 +156,7 @@
             <article class="article">
                 <br><br>
                 <div class="article-image">
-                    <img src="images/BackgR/pngegg630.png" Flux Capacitor">
+                    <img src="{% static 'images/BackgR/pngegg630.png' %}" Flux Capacitor">
                 </div>
                 <h2 class="article-title">Condensador de Flujo</h2>
                 <p class="article-content">
@@ -178,7 +178,7 @@
 
             <article class="article">
                 <br>
-                <div class="article-image"><img src="images/BackgR/pngegg (2).png" alt="DeLorean"></div>
+                <div class="article-image"><img src="{% static 'images/BackgR/pngegg (2).png' %} " alt="DeLorean"></div>
                 <br><br>
                 <h2 class="article-title">
                     El DeLorean de Regreso al Futuro, fue subastado.
@@ -213,7 +213,7 @@
             </article>
 
             <article class="article">
-                <div class="article-image"><img src="images/BackgR/2015-nike-air-mag-gif1large.gif" alt="Nike MAG">
+                <div class="article-image"><img src="{% static 'images/BackgR/2015-nike-air-mag-gif1large.gif' %} " alt="Nike MAG">
                 </div>
                 <br>
                 <h2 class="article-title">
@@ -270,5 +270,8 @@
         </div>
     </div>
 </div>
+
+<script src="{% static 'clock.js' %}"></script>
+
 
 {% endblock %}
